@@ -1,0 +1,6 @@
+framework module WBLaunchAD {
+  umbrella header "WBLaunchAD-umbrella.h"
+
+  export *
+  module * { export * }
+}
