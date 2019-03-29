@@ -7,12 +7,13 @@
 
 #import "WBLaunchADDownloader.h"
 #import "WBLaunchADConst.h"
+#import "WBLaunchADCache.h"
 
 // MARK:WBLaunchADDownload
 @interface WBLaunchADDownload ()
 
 @property (nonatomic, strong) NSURLSession *session;
-@property (strong,nonatomic) NSURLSessionDownloadTask *downloadTask;
+@property (strong, nonatomic) NSURLSessionDownloadTask *downloadTask;
 @property (nonatomic, assign) unsigned long long totalLength;
 @property (nonatomic, assign) unsigned long long currentLength;
 @property (nonatomic, copy) WBLaunchADDownloadProgressBlock progressBlock;
@@ -120,7 +121,6 @@ didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
 @interface WBLaunchADDownloader () <WBLaunchADDownloadDelegate>
 
 @property (strong, nonatomic) NSOperationQueue *downloadImageQueue;
-@property (strong, nonatomic) NSOperationQueue *downloadVideoQueue;
 @property (strong, nonatomic) NSMutableDictionary *allDownloadDict;
 
 @end
@@ -134,6 +134,97 @@ didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
         _downloader = [[self alloc]init];
     });
     return _downloader;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _downloadImageQueue = [NSOperationQueue new];
+        _downloadImageQueue.maxConcurrentOperationCount = 6;
+        _downloadImageQueue.name = @"com.wenbo.WBLaunchADDownloadImageQueue";
+        WBLaunchADLog(@"WBLauchADPath:%@",[WBLaunchADCache wb_launchADCachePath]);
+    }
+    return self;
+}
+
+- (void)wb_downloadImageWithURL:(NSURL *)url
+                       progress:(nullable WBLaunchADDownloadProgressBlock)progressBlock
+                      completed:(WBLaunchADDownloadImageCompletedBlock)completedBlock {
+    NSString *key = [WBLaunchADCache wb_keyWithURL:url];
+    WBLaunchADImageDownload *download = [[WBLaunchADImageDownload alloc]initWithURL:url
+                                                                      delegateQueue:_downloadImageQueue
+                                                                         progress:progressBlock
+                                                                        completed:completedBlock];
+    download.delegate = self;
+    [self.allDownloadDict setObject:download forKey:key];
+}
+
+- (void)wb_downloadImageAndCacheWithURL:(NSURL *)url
+                              completed:(void(^)(BOOL result))completedBlock {
+    if (url == nil) {
+        if (completedBlock) {
+            completedBlock(NO);
+            return;
+        }
+    }
+    
+    [self wb_downloadImageWithURL:url
+                         progress:nil
+                        completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error) {
+                            if (error) {
+                                if (completedBlock) completedBlock(NO);
+                            }else {
+                                [WBLaunchADCache wb_asyncSaveImageData:data
+                                                              imageURL:url
+                                                             completed:^(BOOL res, NSURL * _Nonnull url) {
+                                                                 if (completedBlock) completedBlock(res);
+                                                             }];
+                            }
+                        }];
+}
+
+- (void)wb_downLoadImageAndCacheWithURLArray:(NSArray<NSURL *> *)urlArray {
+    [self wb_downLoadImageAndCacheWithURLArray:urlArray
+                                     completed:nil];
+}
+
+- (void)wb_downLoadImageAndCacheWithURLArray:(NSArray<NSURL *> *)urlArray
+                                   completed:(nullable WBLaunchADBatchDownLoadAndCacheCompletedBlock)completedBlock {
+    if (urlArray.count == 0) return;
+    __block NSMutableArray *downloadArray = @[].mutableCopy;
+    dispatch_group_t group = dispatch_group_create();
+    [urlArray enumerateObjectsUsingBlock:^(NSURL * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (![WBLaunchADCache wb_checkImageCacheWithURL:obj]) {
+            dispatch_group_enter(group);
+            [self wb_downloadImageAndCacheWithURL:obj
+                                        completed:^(BOOL result) {
+                                            dispatch_group_leave(group);
+                                            [downloadArray addObject:@{@"url":obj.absoluteString,@"result":@(result)}];
+                                        }];
+        }else {
+            [downloadArray addObject:@{@"url":obj.absoluteString,@"result":@(YES)}];
+        }
+    }];
+    
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        if (completedBlock) {
+            completedBlock(downloadArray);
+        }
+    });
+}
+
+// MARK:WBLaunchADDownloadDelegate
+- (void)wb_downloadFinishWithURL:(NSURL *)url {
+    [self.allDownloadDict removeObjectForKey:[WBLaunchADCache wb_keyWithURL:url]];
+}
+
+// MARK:getter
+- (NSMutableDictionary *)allDownloadDict {
+    if (!_allDownloadDict) {
+        _allDownloadDict = @{}.mutableCopy;
+    }
+    return _allDownloadDict;
 }
 
 @end

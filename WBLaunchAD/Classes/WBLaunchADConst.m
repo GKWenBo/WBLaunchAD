@@ -9,4 +9,6 @@
 
 @implementation WBLaunchADConst
 
+NSString *const WBLuanchADCacheImageUrlStringKey = @"WBLuanchADCacheImageUrlStringKey";
+NSString *const WBLaunchAdWaitDataDurationArriveNotification  = @"WBLaunchAdWaitDataDurationArriveNotification";
 @end

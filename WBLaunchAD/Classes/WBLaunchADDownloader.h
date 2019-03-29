@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^WBLaunchADDownloadProgressBlock)(unsigned long long total, unsigned long long current);
 typedef void(^WBLaunchADDownloadImageCompletedBlock)(UIImage *_Nullable image, NSData *_Nullable data, NSError *_Nullable error);
+typedef void(^WBLaunchADBatchDownLoadAndCacheCompletedBlock)(NSArray * _Nonnull completedArray);
 
 @protocol WBLaunchADDownloadDelegate <NSObject>
 
@@ -35,11 +36,11 @@ typedef void(^WBLaunchADDownloadImageCompletedBlock)(UIImage *_Nullable image, N
 + (instancetype)shareDownloader;
 
 - (void)wb_downloadImageWithURL:(NSURL *)url
-                       progress:(WBLaunchADDownloadProgressBlock)progressBlock
+                       progress:(nullable WBLaunchADDownloadProgressBlock)progressBlock
                       completed:(WBLaunchADDownloadImageCompletedBlock)completedBlock;
 - (void)wb_downLoadImageAndCacheWithURLArray:(NSArray <NSURL *> * )urlArray;
 - (void)wb_downLoadImageAndCacheWithURLArray:(NSArray <NSURL *> * )urlArray
-                                   completed:(WBLaunchADDownloadImageCompletedBlock)completedBlock;
+                                   completed:(nullable WBLaunchADBatchDownLoadAndCacheCompletedBlock)completedBlock;
 
 @end
 
