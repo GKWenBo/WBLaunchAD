@@ -95,7 +95,87 @@
 // MARK:Public
 - (void)wb_setTitleWithSkipType:(WBCountdownBtnType)skipType
                        duration:(NSInteger)duration {
-    
+    switch (skipType) {
+        case WBCountdownBtnTypeNone:{
+            self.hidden = YES;
+        }
+            break;
+        case WBCountdownBtnTypeTime:{
+            self.hidden = NO;
+            self.timeLab.text = [NSString stringWithFormat:@"%ld %@",duration,kDurationUnit];
+        }
+            break;
+        case WBCountdownBtnTypeText:{
+            self.hidden = NO;
+            self.timeLab.text = kSkipTitle;
+        }
+            break;
+        case WBCountdownBtnTypeTimeText:{
+            self.hidden = NO;
+            self.timeLab.text = [NSString stringWithFormat:@"%ld %@",duration,kSkipTitle];
+        }
+            break;
+        case WBCountdownBtnTypeRoundTime:{
+            self.hidden = NO;
+            self.timeLab.text = [NSString stringWithFormat:@"%ld %@",duration,kDurationUnit];
+        }
+            break;
+        case WBCountdownBtnTypeRoundText:{
+            self.hidden = NO;
+            self.timeLab.text = kSkipTitle;
+        }
+            break;
+        case WBCountdownBtnTypeRoundProgressTime:{
+            self.hidden = NO;
+            self.timeLab.text = [NSString stringWithFormat:@"%ld %@",duration,kDurationUnit];
+        }
+            break;
+        case WBCountdownBtnTypeRoundProgressText:{
+            self.hidden = NO;
+            self.timeLab.text = kSkipTitle;
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)wb_startRoundDispathTimerWithDuration:(CGFloat)duration {
+    NSTimeInterval period = 0.05;
+    __block CGFloat roundDuration = duration;
+    _roundTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
+    dispatch_source_set_timer(_roundTimer, dispatch_walltime(NULL, 0), period * NSEC_PER_SEC, 0);
+    dispatch_source_set_event_handler(_roundTimer, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (duration <= 0) {
+                self.roundLayer.strokeStart = 1.f;
+                DISPATCH_SOURCE_CANCEL_SAFE(_roundTimer);
+            }
+            self.roundLayer.strokeStart += 1 / (duration / period);
+            roundDuration -= period;
+        });
+    });
+    dispatch_resume(_roundTimer);
+}
+
+- (void)setLeftRightSpace:(CGFloat)leftRightSpace {
+    _leftRightSpace = leftRightSpace;
+    CGRect frame = self.timeLab.frame;
+    CGFloat width = frame.size.width;
+    if(leftRightSpace <= 0 || leftRightSpace * 2 >= width) return;
+    frame = CGRectMake(leftRightSpace, frame.origin.y, width - 2 * leftRightSpace, frame.size.height);
+    self.timeLab.frame = frame;
+    [self cornerRadiusWithView:self.timeLab];
+}
+
+- (void)setTopBottomSpace:(CGFloat)topBottomSpace{
+    _topBottomSpace = topBottomSpace;
+    CGRect frame = self.timeLab.frame;
+    CGFloat height = frame.size.height;
+    if(topBottomSpace <= 0 || topBottomSpace * 2>= height) return;
+    frame = CGRectMake(frame.origin.x, topBottomSpace, frame.size.width, height - 2 * topBottomSpace);
+    self.timeLab.frame = frame;
+    [self cornerRadiusWithView:self.timeLab];
 }
 
 // MARK:Private

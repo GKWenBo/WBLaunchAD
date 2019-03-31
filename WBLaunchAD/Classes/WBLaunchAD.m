@@ -73,9 +73,14 @@
     [self wb_removeSubViewsExceptLuancheImageView];
     
     WBLaunchADImageView *adImageView = [[WBLaunchADImageView alloc]init];
+    [_window addSubview:adImageView];
     /*  < frame > */
     if (configuration.frame.size.width > 0 && configuration.frame.size.height > 0) {
         adImageView.frame = configuration.frame;
+    }
+    /** < contentMode > */
+    if (configuration.contentMode) {
+        adImageView.contentMode = configuration.contentMode;
     }
     
     /*  < 图片 > */
@@ -93,15 +98,16 @@
                 configuration.imageOption = WBLaunchADImageOptionsDefault;
             }
             
+            WBWeakSelf
             [adImageView wb_setImageWithURL:[NSURL URLWithString:configuration.imageNameOrURLString]
                            placeholderImage:nil
                                     options:configuration.imageOption
                                   completed:^(UIImage * _Nullable image, NSData * _Nullable imageData, NSError * _Nullable error, NSURL * _Nullable imageURL) {
                                       if (!error) {
-                                          if (self.delegate && [self.delegate respondsToSelector:@selector(wbLaunchAD:imageDownLoadFinish:imageData:)]) {
-                                              [self.delegate wbLaunchAD:self
-                                                    imageDownLoadFinish:image
-                                                              imageData:imageData];
+                                          if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(wbLaunchAD:imageDownLoadFinish:imageData:)]) {
+                                              [weakSelf.delegate wbLaunchAD:self
+                                                        imageDownLoadFinish:image
+                                                                  imageData:imageData];
                                           }
                                       }
                                   }];
@@ -168,55 +174,39 @@
             break;
         case WBLaunchADFinishAnimationTypeLite:
         {
-            [UIView animateWithDuration:duration
-                                  delay:0.f
-                                options:UIViewAnimationOptionCurveEaseOut
-                             animations:^{
-                                 _window.transform = CGAffineTransformMakeScale(1.5, 1.5);
-                                 _window.alpha = 0.f;
-                             }
-                             completion:^(BOOL finished) {
-                                 [self wb_remove];
-                             }];
+            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionCurveEaseOut animations:^{
+                _window.transform = CGAffineTransformMakeScale(1.5, 1.5);
+                _window.alpha = 0;
+            } completion:^(BOOL finished) {
+                [self wb_remove];
+            }];
         }
             break;
         case WBLaunchADFinishAnimationTypeFlipFromLeft:
         {
-            [UIView animateWithDuration:duration
-                                  delay:0.f
-                                options:UIViewAnimationOptionTransitionFlipFromLeft
-                             animations:^{
-                                 _window.alpha = 0.f;
-                             }
-                             completion:^(BOOL finished) {
-                                 [self wb_remove];
-                             }];
+            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+                _window.alpha = 0;
+            } completion:^(BOOL finished) {
+                [self wb_remove];
+            }];
         }
             break;
         case WBLaunchADFinishAnimationTypeFlipFromBottom:
         {
-            [UIView animateWithDuration:duration
-                                  delay:0.f
-                                options:UIViewAnimationOptionTransitionFlipFromBottom
-                             animations:^{
-                                 _window.alpha = 0.f;
-                             }
-                             completion:^(BOOL finished) {
-                                 [self wb_remove];
-                             }];
+            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+                _window.alpha = 0;
+            } completion:^(BOOL finished) {
+                [self wb_remove];
+            }];
         }
             break;
         case WBLaunchADFinishAnimationTypeCurlUp:
         {
-            [UIView animateWithDuration:duration
-                                  delay:0.f
-                                options:UIViewAnimationOptionTransitionCurlUp
-                             animations:^{
-                                 _window.alpha = 0.f;
-                             }
-                             completion:^(BOOL finished) {
-                                 [self wb_remove];
-                             }];
+            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionTransitionCurlUp animations:^{
+                _window.alpha = 0;
+            } completion:^(BOOL finished) {
+                [self wb_remove];
+            }];
         }
             break;
         default:
@@ -318,9 +308,17 @@
     }
 }
 
+- (void)wb_removeAndAnimated:(BOOL)animated{
+    if(animated){
+        [self wb_removeAndAnimate];
+    }else{
+        [self wb_remove];
+    }
+}
+
 // MARK:Event Response
 - (void)skipButtonClick {
-    
+    [self wb_removeAndAnimated:YES];
 }
 
 - (void)wb_clickAndPoint:(CGPoint)point {
@@ -339,7 +337,7 @@
     [WBLaunchAD shareLaunchAD].waitDataDuration = duration;
 }
 
-+ (void)wb_setLuanchSourceType:(WBLaunchImageSourceType)sourceType {
++ (void)wb_setLaunchSourceType:(WBLaunchImageSourceType)sourceType {
     [WBLaunchAD shareLaunchAD].sourceType = sourceType;
 }
 

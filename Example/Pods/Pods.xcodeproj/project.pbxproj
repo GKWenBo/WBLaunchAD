@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02A4E060FC9E2B7B967431ACD1861A2A /* WBLaunchAD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B27894646FE06CA8D242114F88DF105 /* WBLaunchAD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0003C4C40E8A5F848CD52DD6AC225459 /* WBLaunchADImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A2158BEF90E62A6C418569E62EB7BE69 /* WBLaunchADImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04546F0BBAE429923B3DE1FB1C4BEA32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		1276C2F6A73321D89082FA07701A6141 /* WBLaunchADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3825D067B235F5931EEBF518D4007E6D /* WBLaunchADViewController.m */; };
+		1312AA924D640267CC279ED3C791ED84 /* WBLaunchADCache.h in Headers */ = {isa = PBXBuildFile; fileRef = FA2AF9D6C1DDEDE82ECABE65BDC8EA48 /* WBLaunchADCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		13FAEB838C5F9D326240095486455AA8 /* Pods-WBLaunchAD_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 735629F9DE9308246D5A1FD743B4DBD2 /* Pods-WBLaunchAD_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15EFB243F222D2D37F1B5A31FCE7E5EE /* WBLaunchAD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A18C9C1D7625ACFE3475F5CB302376E /* WBLaunchAD-dummy.m */; };
+		1754B64C152E767F33011A30820FAA41 /* WBLaunchADImageView+WBLaunchADCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D290D588EBA7804E437595FD8BAE3A2 /* WBLaunchADImageView+WBLaunchADCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CEE7EB838A905C56322C1177095AE11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		22153F7214051B5814E1742EEB0D07FA /* WBLaunchADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08528D9D19B8A2043CFD18288F65D747 /* WBLaunchADViewController.m */; };
-		2A88090E851D2060E9157D720876E5A8 /* WBLaunchADConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5E621CC1AC0506C8049C7FDB8A2B76 /* WBLaunchADConst.m */; };
-		3DDDD6D84F5A52BAE0BD5C1C068FB783 /* WBLaunchADImageView+WBLaunchADCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9F2797C3AE3C1162775C414F955FF8 /* WBLaunchADImageView+WBLaunchADCache.m */; };
-		3E42984D66EAE534823FD35AD81D0A16 /* WBLaunchADImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE35576DDB038FA12C870030743283E /* WBLaunchADImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4625C0DD48C6777DD0A41CE4042CCFE9 /* WBLaunchADConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2558298E9F23702849D1C9B58351002D /* WBLaunchADConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B115E4A340836D814EBFC57031D292F /* WBLaunchADConst.h in Headers */ = {isa = PBXBuildFile; fileRef = C1FBC800D007B08591F3AE2F1458A43B /* WBLaunchADConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29AB3D80A084E3F20110409049569D8B /* WBLaunchAD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BA98319B6928A01F3DFF986761EE45 /* WBLaunchAD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29BEEB269B5A913CCC874D993E402A0D /* WBLaunchADConst.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B88BAE1B3F6FC620AB27994E4C1262 /* WBLaunchADConst.m */; };
+		2B52E908753953A2AB3DD61FCC8A1805 /* WBLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC4264B0DAA14D789D87FC514FE329D /* WBLaunchImageView.m */; };
+		2E5D4A63B1DCEFDEED9497A0050B5C82 /* WBLaunchADImageView+WBLaunchADCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DC373105DC5E79E46BD41B9F000DF0C9 /* WBLaunchADImageView+WBLaunchADCache.m */; };
+		3C7988DB7E109AB2B06467841C2CC434 /* WBLaunchADConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E1B5DB7644980F75231C891F79C9FA /* WBLaunchADConfiguration.m */; };
+		4B412A9005B90BAF37E409AB6D55466D /* WBLaunchADView.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F565FD601848C88D2524EE06DC8A4B /* WBLaunchADView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DC1EDDA58ABFC99B55C1B680DE2FC69 /* WBLaunchADCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 475CA01CB44301715B5731B90FF228D7 /* WBLaunchADCache.m */; };
+		545F5059ECA78B00EAEDFF3672AEA01E /* WBLaunchAD.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CFB2B934CED9646EC4A92100FB8B1D /* WBLaunchAD.m */; };
+		568EB8EDE3DDCAB89BE566234E08F592 /* WBLaunchADView.m in Sources */ = {isa = PBXBuildFile; fileRef = F83A5CDB01DB3511734C8F89B25FF447 /* WBLaunchADView.m */; };
 		5C7B2BAB57ADE6E32559250772CC11A7 /* Pods-WBLaunchAD_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8012DC74BBDEAF222D5CCE7F4A64B192 /* Pods-WBLaunchAD_Tests-dummy.m */; };
-		5D4B236D15CB65E8C0B288909F569C4F /* WBLaunchADButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AEC4D8FCA0FBFE13765B219F03FF1D /* WBLaunchADButton.m */; };
-		5FD4D8DE2B2A4F499E465F2CD5D0775C /* WBLaunchADButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 40EA88267F511D8E64AFC95AEF9DC274 /* WBLaunchADButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6960D26BB5CC6C9C5B0C4B19489D9F02 /* WBLaunchImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D497C0588AA4C9D48803EC20FFCA76F /* WBLaunchImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F874DC13CF93F21710943E40EF3A719 /* Pods-WBLaunchAD_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE8F0FA81C46C651A4514BCA8B2DC2 /* Pods-WBLaunchAD_Example-dummy.m */; };
-		78BB7D79A59F51595667430F5B256CA3 /* WBLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6037F4C94B2A4DDDDE9936AA0B52F4F /* WBLaunchImageView.m */; };
-		7E3DCCB107F89A6C1A1414E2919FAA02 /* WBLaunchADCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B978FEB95579B046768E70B463BC15 /* WBLaunchADCache.m */; };
 		90B76A46066DF68C716A105E6B04856B /* Pods-WBLaunchAD_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C1598B08E5E4ABE2DEC2A5F0EE348C /* Pods-WBLaunchAD_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BA878D5F2CBD3859A6F0295F1201B25 /* WBLaunchADDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2C0A22DBF46EA6F9E0DFF1D3061B4A /* WBLaunchADDownloader.m */; };
-		A33D4B9A5A3F3E2A1303AEE4085E4D3C /* WBLaunchADDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = D88F4E7FD50A063FF4BB87FB19B16E78 /* WBLaunchADDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9272AE1AC9F0B40BF342D559DB26F376 /* WBLaunchAD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A27ED0C9E8D1C0127B77D979BF8B6269 /* WBLaunchAD-dummy.m */; };
+		A7351B46A74194CAFEBD1238DAB51FE0 /* WBLaunchADDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 474C215B252EBD74D5769A2C14FD7856 /* WBLaunchADDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABF54FCD209BD9BA3F2C71DE422551E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		AE4FECA6698FF16D34ECDE345F2F1571 /* WBLaunchAD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8BD07BF5FC9A8A51B37B4DC35CF9D8 /* WBLaunchAD.m */; };
-		B2755344B2505FC83E632A501B8F1515 /* WBLaunchADView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D3572A44AD809388D09FE1FAE39F2B /* WBLaunchADView.m */; };
-		B335C0535C102EBBADC3F8837728B1B8 /* WBLaunchADConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0582998DDF732E52FC224EB64237E845 /* WBLaunchADConfiguration.m */; };
-		B3FDD74A904266B5DFB80996638A3A95 /* WBLaunchADView.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D7477962A07F43BD61F09FBD2B5C30 /* WBLaunchADView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCD519E6104E4AAF1F45C746E9E66265 /* WBLaunchADImageView+WBLaunchADCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F4C632C26F4DA35412AEC5657AB722 /* WBLaunchADImageView+WBLaunchADCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5BC0D78F1EE9D65BE6EE27E6765423F /* WBLaunchADViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 65270EC9A5B5A60AD6EC6A5DBECEE937 /* WBLaunchADViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E492C070125FC0E27AB06A284FEBFD8A /* WBLaunchAD.h in Headers */ = {isa = PBXBuildFile; fileRef = 15AC2FCAEAA4A4465A79A829BE937B5A /* WBLaunchAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAB95335D2EEDDD4820006DE91F1AD2F /* WBLaunchADImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD87E0A2066D2F4C49C3BB05B5B88D70 /* WBLaunchADImageManager.m */; };
-		FB07320EBEB0B671441A13789A8710DD /* WBLaunchADCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 05275CE4982B216B700548F3C0377244 /* WBLaunchADCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFBEF54F25D2F1073EF828E2C69B43A3 /* WBLaunchADButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A558CE277EAD408845AB9641FCE57408 /* WBLaunchADButton.m */; };
+		B75AF39FED12A67C79CF2791B10B089B /* WBLaunchADViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8723792B984D6304629EEE6AC1242E28 /* WBLaunchADViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BED6D1A7401131B1F77250FDE06B608A /* WBLaunchADConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 0056A8A96789265A365314C45EBDF4CA /* WBLaunchADConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C55BF897DDC60E359ED8DE9707B9EE55 /* WBLaunchAD.h in Headers */ = {isa = PBXBuildFile; fileRef = D953996C449335A1146304476C19438E /* WBLaunchAD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D15B2F8E20E505680D26F1D6661489A3 /* WBLaunchADDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0552820FAC7539A78DA91CF970C838 /* WBLaunchADDownloader.m */; };
+		D598BBCA1E80B03103F650E0A5599873 /* WBLaunchADConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE3AE22322E4081F0DE3CAC63E29C86 /* WBLaunchADConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E103F4E67EDE6C97DB98398A6B8DAC99 /* WBLaunchADButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F7604AAEE9ED0D4B5F61A77FD25435 /* WBLaunchADButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6D82AFA7CEF70DB5222C630875C905E /* WBLaunchADImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3834510AAA44FC36CA234772C5431C /* WBLaunchADImageManager.m */; };
+		EE4C69B0C7792F0E29B95BCD2DC1F094 /* WBLaunchImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F7F9EAECFEF32D4847450F7562E15A0 /* WBLaunchImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,59 +58,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05275CE4982B216B700548F3C0377244 /* WBLaunchADCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADCache.h; path = WBLaunchAD/Classes/WBLaunchADCache.h; sourceTree = "<group>"; };
-		0582998DDF732E52FC224EB64237E845 /* WBLaunchADConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADConfiguration.m; path = WBLaunchAD/Classes/WBLaunchADConfiguration.m; sourceTree = "<group>"; };
-		08528D9D19B8A2043CFD18288F65D747 /* WBLaunchADViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADViewController.m; path = WBLaunchAD/Classes/WBLaunchADViewController.m; sourceTree = "<group>"; };
-		09B978FEB95579B046768E70B463BC15 /* WBLaunchADCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADCache.m; path = WBLaunchAD/Classes/WBLaunchADCache.m; sourceTree = "<group>"; };
-		0E49D70A66263AB3D9FA752B20626145 /* Pods_WBLaunchAD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBLaunchAD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0056A8A96789265A365314C45EBDF4CA /* WBLaunchADConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADConst.h; path = WBLaunchAD/Classes/WBLaunchADConst.h; sourceTree = "<group>"; };
+		0E49D70A66263AB3D9FA752B20626145 /* Pods_WBLaunchAD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WBLaunchAD_Example.framework; path = "Pods-WBLaunchAD_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127515D9CC92AD8D31E408B964116ADF /* Pods-WBLaunchAD_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WBLaunchAD_Tests.modulemap"; sourceTree = "<group>"; };
-		15AC2FCAEAA4A4465A79A829BE937B5A /* WBLaunchAD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchAD.h; path = WBLaunchAD/Classes/WBLaunchAD.h; sourceTree = "<group>"; };
 		1D53F1F9B8CFDBD4696E400093108ABE /* Pods-WBLaunchAD_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBLaunchAD_Example-Info.plist"; sourceTree = "<group>"; };
-		2558298E9F23702849D1C9B58351002D /* WBLaunchADConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADConfiguration.h; path = WBLaunchAD/Classes/WBLaunchADConfiguration.h; sourceTree = "<group>"; };
-		29AEC4D8FCA0FBFE13765B219F03FF1D /* WBLaunchADButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADButton.m; path = WBLaunchAD/Classes/WBLaunchADButton.m; sourceTree = "<group>"; };
-		2B27894646FE06CA8D242114F88DF105 /* WBLaunchAD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBLaunchAD-umbrella.h"; sourceTree = "<group>"; };
+		1E29F8D5320037E662A581CE42BC2290 /* WBLaunchAD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBLaunchAD.xcconfig; sourceTree = "<group>"; };
 		2EE7CB9215616DDF395B104D5CEF2FA5 /* Pods-WBLaunchAD_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WBLaunchAD_Example.modulemap"; sourceTree = "<group>"; };
 		37F3993101D723B346198EBF4D367C10 /* Pods-WBLaunchAD_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBLaunchAD_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3A2C0A22DBF46EA6F9E0DFF1D3061B4A /* WBLaunchADDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADDownloader.m; path = WBLaunchAD/Classes/WBLaunchADDownloader.m; sourceTree = "<group>"; };
-		3F5E621CC1AC0506C8049C7FDB8A2B76 /* WBLaunchADConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADConst.m; path = WBLaunchAD/Classes/WBLaunchADConst.m; sourceTree = "<group>"; };
-		40EA88267F511D8E64AFC95AEF9DC274 /* WBLaunchADButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADButton.h; path = WBLaunchAD/Classes/WBLaunchADButton.h; sourceTree = "<group>"; };
-		49D3572A44AD809388D09FE1FAE39F2B /* WBLaunchADView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADView.m; path = WBLaunchAD/Classes/WBLaunchADView.m; sourceTree = "<group>"; };
+		3825D067B235F5931EEBF518D4007E6D /* WBLaunchADViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADViewController.m; path = WBLaunchAD/Classes/WBLaunchADViewController.m; sourceTree = "<group>"; };
+		474C215B252EBD74D5769A2C14FD7856 /* WBLaunchADDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADDownloader.h; path = WBLaunchAD/Classes/WBLaunchADDownloader.h; sourceTree = "<group>"; };
+		475CA01CB44301715B5731B90FF228D7 /* WBLaunchADCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADCache.m; path = WBLaunchAD/Classes/WBLaunchADCache.m; sourceTree = "<group>"; };
+		4ED7831F3AE146FE0088368822010EB9 /* WBLaunchAD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WBLaunchAD.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5698D5C62FD8114C2A22EA90DF6D837A /* Pods-WBLaunchAD_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBLaunchAD_Tests-Info.plist"; sourceTree = "<group>"; };
+		56BA98319B6928A01F3DFF986761EE45 /* WBLaunchAD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBLaunchAD-umbrella.h"; sourceTree = "<group>"; };
 		578EC7EC76217B1DB7A465B16024F0DB /* Pods-WBLaunchAD_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBLaunchAD_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5DB1222C9473CBC6D7A2A08FA313ACAD /* WBLaunchAD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WBLaunchAD.modulemap; sourceTree = "<group>"; };
-		65270EC9A5B5A60AD6EC6A5DBECEE937 /* WBLaunchADViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADViewController.h; path = WBLaunchAD/Classes/WBLaunchADViewController.h; sourceTree = "<group>"; };
-		6D651D2A9C796A3B0721D324D780A9A2 /* WBLaunchAD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WBLaunchAD.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6EC46979D88D6D52972465CD3028872B /* WBLaunchAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WBLaunchAD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B131B993A04E1F22D72E98BB9AED79 /* WBLaunchAD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBLaunchAD-prefix.pch"; sourceTree = "<group>"; };
+		6BD8AD4A2D4CF4ACDE7B3990E39EAFEE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6EC46979D88D6D52972465CD3028872B /* WBLaunchAD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WBLaunchAD.framework; path = WBLaunchAD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		735629F9DE9308246D5A1FD743B4DBD2 /* Pods-WBLaunchAD_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WBLaunchAD_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8012DC74BBDEAF222D5CCE7F4A64B192 /* Pods-WBLaunchAD_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WBLaunchAD_Tests-dummy.m"; sourceTree = "<group>"; };
-		83E65BF7D2320D52A3758D3FFA726FCD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		856F6A136C4222DA635382EE312B5AC5 /* Pods-WBLaunchAD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBLaunchAD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8723792B984D6304629EEE6AC1242E28 /* WBLaunchADViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADViewController.h; path = WBLaunchAD/Classes/WBLaunchADViewController.h; sourceTree = "<group>"; };
 		87C1598B08E5E4ABE2DEC2A5F0EE348C /* Pods-WBLaunchAD_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WBLaunchAD_Example-umbrella.h"; sourceTree = "<group>"; };
-		8B8897711B0292216A7BAC12221A946C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		8D8BD07BF5FC9A8A51B37B4DC35CF9D8 /* WBLaunchAD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchAD.m; path = WBLaunchAD/Classes/WBLaunchAD.m; sourceTree = "<group>"; };
-		95EF8DD1B59CFFAD867D4766D33094AA /* WBLaunchAD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WBLaunchAD-prefix.pch"; sourceTree = "<group>"; };
-		9A18C9C1D7625ACFE3475F5CB302376E /* WBLaunchAD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBLaunchAD-dummy.m"; sourceTree = "<group>"; };
-		9BFF391ADA3C4386B08AB9B8A3C0F0A7 /* WBLaunchAD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WBLaunchAD.xcconfig; sourceTree = "<group>"; };
-		9D497C0588AA4C9D48803EC20FFCA76F /* WBLaunchImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchImageView.h; path = WBLaunchAD/Classes/WBLaunchImageView.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E3E2231C4702BC9B78DF14FB915383E /* WBLaunchAD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WBLaunchAD-Info.plist"; sourceTree = "<group>"; };
+		8D290D588EBA7804E437595FD8BAE3A2 /* WBLaunchADImageView+WBLaunchADCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBLaunchADImageView+WBLaunchADCache.h"; path = "WBLaunchAD/Classes/WBLaunchADImageView+WBLaunchADCache.h"; sourceTree = "<group>"; };
+		9A3834510AAA44FC36CA234772C5431C /* WBLaunchADImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADImageManager.m; path = WBLaunchAD/Classes/WBLaunchADImageManager.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F7F9EAECFEF32D4847450F7562E15A0 /* WBLaunchImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchImageView.h; path = WBLaunchAD/Classes/WBLaunchImageView.h; sourceTree = "<group>"; };
 		A01BCA70E85223B29636EDD21364A616 /* Pods-WBLaunchAD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBLaunchAD_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AC71D5579AD3815552B2C88D05C4259E /* Pods_WBLaunchAD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBLaunchAD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2158BEF90E62A6C418569E62EB7BE69 /* WBLaunchADImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADImageManager.h; path = WBLaunchAD/Classes/WBLaunchADImageManager.h; sourceTree = "<group>"; };
+		A27ED0C9E8D1C0127B77D979BF8B6269 /* WBLaunchAD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBLaunchAD-dummy.m"; sourceTree = "<group>"; };
+		A2B88BAE1B3F6FC620AB27994E4C1262 /* WBLaunchADConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADConst.m; path = WBLaunchAD/Classes/WBLaunchADConst.m; sourceTree = "<group>"; };
+		A4F565FD601848C88D2524EE06DC8A4B /* WBLaunchADView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADView.h; path = WBLaunchAD/Classes/WBLaunchADView.h; sourceTree = "<group>"; };
+		A558CE277EAD408845AB9641FCE57408 /* WBLaunchADButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADButton.m; path = WBLaunchAD/Classes/WBLaunchADButton.m; sourceTree = "<group>"; };
+		AAE3AE22322E4081F0DE3CAC63E29C86 /* WBLaunchADConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADConfiguration.h; path = WBLaunchAD/Classes/WBLaunchADConfiguration.h; sourceTree = "<group>"; };
+		AC71D5579AD3815552B2C88D05C4259E /* Pods_WBLaunchAD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WBLaunchAD_Tests.framework; path = "Pods-WBLaunchAD_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD725A087252ACD929A3C0D7E277043 /* Pods-WBLaunchAD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBLaunchAD_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B2D7477962A07F43BD61F09FBD2B5C30 /* WBLaunchADView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADView.h; path = WBLaunchAD/Classes/WBLaunchADView.h; sourceTree = "<group>"; };
-		B6037F4C94B2A4DDDDE9936AA0B52F4F /* WBLaunchImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchImageView.m; path = WBLaunchAD/Classes/WBLaunchImageView.m; sourceTree = "<group>"; };
+		B5A4495E00AA82C73378232330FCDC31 /* WBLaunchAD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WBLaunchAD.modulemap; sourceTree = "<group>"; };
 		BAEF28D9FC1EA6A9489A3AA5DAB9E54A /* Pods-WBLaunchAD_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WBLaunchAD_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BD9F2797C3AE3C1162775C414F955FF8 /* WBLaunchADImageView+WBLaunchADCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WBLaunchADImageView+WBLaunchADCache.m"; path = "WBLaunchAD/Classes/WBLaunchADImageView+WBLaunchADCache.m"; sourceTree = "<group>"; };
-		C1FBC800D007B08591F3AE2F1458A43B /* WBLaunchADConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADConst.h; path = WBLaunchAD/Classes/WBLaunchADConst.h; sourceTree = "<group>"; };
+		BEC4264B0DAA14D789D87FC514FE329D /* WBLaunchImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchImageView.m; path = WBLaunchAD/Classes/WBLaunchImageView.m; sourceTree = "<group>"; };
+		C60E8886B21C254044D8CBDB38E8331C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D1F4C632C26F4DA35412AEC5657AB722 /* WBLaunchADImageView+WBLaunchADCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBLaunchADImageView+WBLaunchADCache.h"; path = "WBLaunchAD/Classes/WBLaunchADImageView+WBLaunchADCache.h"; sourceTree = "<group>"; };
-		D88F4E7FD50A063FF4BB87FB19B16E78 /* WBLaunchADDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADDownloader.h; path = WBLaunchAD/Classes/WBLaunchADDownloader.h; sourceTree = "<group>"; };
+		CD0552820FAC7539A78DA91CF970C838 /* WBLaunchADDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADDownloader.m; path = WBLaunchAD/Classes/WBLaunchADDownloader.m; sourceTree = "<group>"; };
+		CF7038B7B2574A02FB95D91796884BD0 /* WBLaunchAD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WBLaunchAD-Info.plist"; sourceTree = "<group>"; };
+		D953996C449335A1146304476C19438E /* WBLaunchAD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchAD.h; path = WBLaunchAD/Classes/WBLaunchAD.h; sourceTree = "<group>"; };
+		DC373105DC5E79E46BD41B9F000DF0C9 /* WBLaunchADImageView+WBLaunchADCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WBLaunchADImageView+WBLaunchADCache.m"; path = "WBLaunchAD/Classes/WBLaunchADImageView+WBLaunchADCache.m"; sourceTree = "<group>"; };
 		DCA8EC8E2CD45087AD874151C9D5C043 /* Pods-WBLaunchAD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBLaunchAD_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DCE35576DDB038FA12C870030743283E /* WBLaunchADImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADImageManager.h; path = WBLaunchAD/Classes/WBLaunchADImageManager.h; sourceTree = "<group>"; };
-		DD87E0A2066D2F4C49C3BB05B5B88D70 /* WBLaunchADImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADImageManager.m; path = WBLaunchAD/Classes/WBLaunchADImageManager.m; sourceTree = "<group>"; };
 		E5BE8F0FA81C46C651A4514BCA8B2DC2 /* Pods-WBLaunchAD_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WBLaunchAD_Example-dummy.m"; sourceTree = "<group>"; };
+		E5CFB2B934CED9646EC4A92100FB8B1D /* WBLaunchAD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchAD.m; path = WBLaunchAD/Classes/WBLaunchAD.m; sourceTree = "<group>"; };
+		F3E1B5DB7644980F75231C891F79C9FA /* WBLaunchADConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADConfiguration.m; path = WBLaunchAD/Classes/WBLaunchADConfiguration.m; sourceTree = "<group>"; };
 		F4DE722D77EA11155AD9B47FFC2C81FD /* Pods-WBLaunchAD_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WBLaunchAD_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F4F7604AAEE9ED0D4B5F61A77FD25435 /* WBLaunchADButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADButton.h; path = WBLaunchAD/Classes/WBLaunchADButton.h; sourceTree = "<group>"; };
+		F83A5CDB01DB3511734C8F89B25FF447 /* WBLaunchADView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WBLaunchADView.m; path = WBLaunchAD/Classes/WBLaunchADView.m; sourceTree = "<group>"; };
 		F9FB7E6056FA721D59EA8E52F2AB1B18 /* Pods-WBLaunchAD_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WBLaunchAD_Example-frameworks.sh"; sourceTree = "<group>"; };
+		FA2AF9D6C1DDEDE82ECABE65BDC8EA48 /* WBLaunchADCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBLaunchADCache.h; path = WBLaunchAD/Classes/WBLaunchADCache.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,33 +141,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07C05B64F7C2F983D970DD4339FA8AC1 /* WBLaunchAD */ = {
+		10A9583EB4610723F6BF41208587D85B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				15AC2FCAEAA4A4465A79A829BE937B5A /* WBLaunchAD.h */,
-				8D8BD07BF5FC9A8A51B37B4DC35CF9D8 /* WBLaunchAD.m */,
-				40EA88267F511D8E64AFC95AEF9DC274 /* WBLaunchADButton.h */,
-				29AEC4D8FCA0FBFE13765B219F03FF1D /* WBLaunchADButton.m */,
-				05275CE4982B216B700548F3C0377244 /* WBLaunchADCache.h */,
-				09B978FEB95579B046768E70B463BC15 /* WBLaunchADCache.m */,
-				C1FBC800D007B08591F3AE2F1458A43B /* WBLaunchADConst.h */,
-				3F5E621CC1AC0506C8049C7FDB8A2B76 /* WBLaunchADConst.m */,
-				D88F4E7FD50A063FF4BB87FB19B16E78 /* WBLaunchADDownloader.h */,
-				3A2C0A22DBF46EA6F9E0DFF1D3061B4A /* WBLaunchADDownloader.m */,
-				DCE35576DDB038FA12C870030743283E /* WBLaunchADImageManager.h */,
-				DD87E0A2066D2F4C49C3BB05B5B88D70 /* WBLaunchADImageManager.m */,
-				D1F4C632C26F4DA35412AEC5657AB722 /* WBLaunchADImageView+WBLaunchADCache.h */,
-				BD9F2797C3AE3C1162775C414F955FF8 /* WBLaunchADImageView+WBLaunchADCache.m */,
-				B2D7477962A07F43BD61F09FBD2B5C30 /* WBLaunchADView.h */,
-				49D3572A44AD809388D09FE1FAE39F2B /* WBLaunchADView.m */,
-				2558298E9F23702849D1C9B58351002D /* WBLaunchADConfiguration.h */,
-				0582998DDF732E52FC224EB64237E845 /* WBLaunchADConfiguration.m */,
-				65270EC9A5B5A60AD6EC6A5DBECEE937 /* WBLaunchADViewController.h */,
-				08528D9D19B8A2043CFD18288F65D747 /* WBLaunchADViewController.m */,
-				9D497C0588AA4C9D48803EC20FFCA76F /* WBLaunchImageView.h */,
-				B6037F4C94B2A4DDDDE9936AA0B52F4F /* WBLaunchImageView.m */,
-				E09C023729BB72E032B6E26AA35CC796 /* Pod */,
-				BC3590E7A6584A304D2B923BD6A2E4A2 /* Support Files */,
+				C60E8886B21C254044D8CBDB38E8331C /* LICENSE */,
+				6BD8AD4A2D4CF4ACDE7B3990E39EAFEE /* README.md */,
+				4ED7831F3AE146FE0088368822010EB9 /* WBLaunchAD.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		6D260E330E69DFF23847E08B25BC7E6B /* WBLaunchAD */ = {
+			isa = PBXGroup;
+			children = (
+				D953996C449335A1146304476C19438E /* WBLaunchAD.h */,
+				E5CFB2B934CED9646EC4A92100FB8B1D /* WBLaunchAD.m */,
+				F4F7604AAEE9ED0D4B5F61A77FD25435 /* WBLaunchADButton.h */,
+				A558CE277EAD408845AB9641FCE57408 /* WBLaunchADButton.m */,
+				FA2AF9D6C1DDEDE82ECABE65BDC8EA48 /* WBLaunchADCache.h */,
+				475CA01CB44301715B5731B90FF228D7 /* WBLaunchADCache.m */,
+				AAE3AE22322E4081F0DE3CAC63E29C86 /* WBLaunchADConfiguration.h */,
+				F3E1B5DB7644980F75231C891F79C9FA /* WBLaunchADConfiguration.m */,
+				0056A8A96789265A365314C45EBDF4CA /* WBLaunchADConst.h */,
+				A2B88BAE1B3F6FC620AB27994E4C1262 /* WBLaunchADConst.m */,
+				474C215B252EBD74D5769A2C14FD7856 /* WBLaunchADDownloader.h */,
+				CD0552820FAC7539A78DA91CF970C838 /* WBLaunchADDownloader.m */,
+				A2158BEF90E62A6C418569E62EB7BE69 /* WBLaunchADImageManager.h */,
+				9A3834510AAA44FC36CA234772C5431C /* WBLaunchADImageManager.m */,
+				8D290D588EBA7804E437595FD8BAE3A2 /* WBLaunchADImageView+WBLaunchADCache.h */,
+				DC373105DC5E79E46BD41B9F000DF0C9 /* WBLaunchADImageView+WBLaunchADCache.m */,
+				A4F565FD601848C88D2524EE06DC8A4B /* WBLaunchADView.h */,
+				F83A5CDB01DB3511734C8F89B25FF447 /* WBLaunchADView.m */,
+				8723792B984D6304629EEE6AC1242E28 /* WBLaunchADViewController.h */,
+				3825D067B235F5931EEBF518D4007E6D /* WBLaunchADViewController.m */,
+				9F7F9EAECFEF32D4847450F7562E15A0 /* WBLaunchImageView.h */,
+				BEC4264B0DAA14D789D87FC514FE329D /* WBLaunchImageView.m */,
+				10A9583EB4610723F6BF41208587D85B /* Pod */,
+				D9BFB8A15436038C69F17553D0784174 /* Support Files */,
 			);
 			name = WBLaunchAD;
 			path = ../..;
@@ -209,7 +219,7 @@
 		9247C69CB784F96604064D54161A8F71 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				07C05B64F7C2F983D970DD4339FA8AC1 /* WBLaunchAD */,
+				6D260E330E69DFF23847E08B25BC7E6B /* WBLaunchAD */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -229,20 +239,6 @@
 				767251F5065ABC911FB0450BFACA90B2 /* Pods-WBLaunchAD_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BC3590E7A6584A304D2B923BD6A2E4A2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5DB1222C9473CBC6D7A2A08FA313ACAD /* WBLaunchAD.modulemap */,
-				9BFF391ADA3C4386B08AB9B8A3C0F0A7 /* WBLaunchAD.xcconfig */,
-				9A18C9C1D7625ACFE3475F5CB302376E /* WBLaunchAD-dummy.m */,
-				9E3E2231C4702BC9B78DF14FB915383E /* WBLaunchAD-Info.plist */,
-				95EF8DD1B59CFFAD867D4766D33094AA /* WBLaunchAD-prefix.pch */,
-				2B27894646FE06CA8D242114F88DF105 /* WBLaunchAD-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WBLaunchAD";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -274,35 +270,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E09C023729BB72E032B6E26AA35CC796 /* Pod */ = {
+		D9BFB8A15436038C69F17553D0784174 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				83E65BF7D2320D52A3758D3FFA726FCD /* LICENSE */,
-				8B8897711B0292216A7BAC12221A946C /* README.md */,
-				6D651D2A9C796A3B0721D324D780A9A2 /* WBLaunchAD.podspec */,
+				B5A4495E00AA82C73378232330FCDC31 /* WBLaunchAD.modulemap */,
+				1E29F8D5320037E662A581CE42BC2290 /* WBLaunchAD.xcconfig */,
+				A27ED0C9E8D1C0127B77D979BF8B6269 /* WBLaunchAD-dummy.m */,
+				CF7038B7B2574A02FB95D91796884BD0 /* WBLaunchAD-Info.plist */,
+				63B131B993A04E1F22D72E98BB9AED79 /* WBLaunchAD-prefix.pch */,
+				56BA98319B6928A01F3DFF986761EE45 /* WBLaunchAD-umbrella.h */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WBLaunchAD";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1BFA09A83C99060B235776DDFEC47CE5 /* Headers */ = {
+		2BFD6F74E6E6C4E0541FA81CF8C17525 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A4E060FC9E2B7B967431ACD1861A2A /* WBLaunchAD-umbrella.h in Headers */,
-				E492C070125FC0E27AB06A284FEBFD8A /* WBLaunchAD.h in Headers */,
-				5FD4D8DE2B2A4F499E465F2CD5D0775C /* WBLaunchADButton.h in Headers */,
-				FB07320EBEB0B671441A13789A8710DD /* WBLaunchADCache.h in Headers */,
-				4B115E4A340836D814EBFC57031D292F /* WBLaunchADConst.h in Headers */,
-				A33D4B9A5A3F3E2A1303AEE4085E4D3C /* WBLaunchADDownloader.h in Headers */,
-				3E42984D66EAE534823FD35AD81D0A16 /* WBLaunchADImageManager.h in Headers */,
-				BCD519E6104E4AAF1F45C746E9E66265 /* WBLaunchADImageView+WBLaunchADCache.h in Headers */,
-				B3FDD74A904266B5DFB80996638A3A95 /* WBLaunchADView.h in Headers */,
-				4625C0DD48C6777DD0A41CE4042CCFE9 /* WBLaunchADConfiguration.h in Headers */,
-				D5BC0D78F1EE9D65BE6EE27E6765423F /* WBLaunchADViewController.h in Headers */,
-				6960D26BB5CC6C9C5B0C4B19489D9F02 /* WBLaunchImageView.h in Headers */,
+				29AB3D80A084E3F20110409049569D8B /* WBLaunchAD-umbrella.h in Headers */,
+				C55BF897DDC60E359ED8DE9707B9EE55 /* WBLaunchAD.h in Headers */,
+				E103F4E67EDE6C97DB98398A6B8DAC99 /* WBLaunchADButton.h in Headers */,
+				1312AA924D640267CC279ED3C791ED84 /* WBLaunchADCache.h in Headers */,
+				D598BBCA1E80B03103F650E0A5599873 /* WBLaunchADConfiguration.h in Headers */,
+				BED6D1A7401131B1F77250FDE06B608A /* WBLaunchADConst.h in Headers */,
+				A7351B46A74194CAFEBD1238DAB51FE0 /* WBLaunchADDownloader.h in Headers */,
+				0003C4C40E8A5F848CD52DD6AC225459 /* WBLaunchADImageManager.h in Headers */,
+				1754B64C152E767F33011A30820FAA41 /* WBLaunchADImageView+WBLaunchADCache.h in Headers */,
+				4B412A9005B90BAF37E409AB6D55466D /* WBLaunchADView.h in Headers */,
+				B75AF39FED12A67C79CF2791B10B089B /* WBLaunchADViewController.h in Headers */,
+				EE4C69B0C7792F0E29B95BCD2DC1F094 /* WBLaunchImageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +348,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5E5DCD26111AD6F408CF927E2C874A2 /* Build configuration list for PBXNativeTarget "WBLaunchAD" */;
 			buildPhases = (
-				1BFA09A83C99060B235776DDFEC47CE5 /* Headers */,
-				FA8DF779DD8834A313C660ECC944D842 /* Sources */,
+				2BFD6F74E6E6C4E0541FA81CF8C17525 /* Headers */,
+				3D04AAC8F68FADB6F3DD90FC4EE9E2BE /* Sources */,
 				A8C69FC9CB3BA5E2A28F294DDC08681A /* Frameworks */,
 				C0B074FCA74EE8AEAA739CB3CDFDFA3E /* Resources */,
 			);
@@ -442,30 +442,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3D04AAC8F68FADB6F3DD90FC4EE9E2BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9272AE1AC9F0B40BF342D559DB26F376 /* WBLaunchAD-dummy.m in Sources */,
+				545F5059ECA78B00EAEDFF3672AEA01E /* WBLaunchAD.m in Sources */,
+				AFBEF54F25D2F1073EF828E2C69B43A3 /* WBLaunchADButton.m in Sources */,
+				4DC1EDDA58ABFC99B55C1B680DE2FC69 /* WBLaunchADCache.m in Sources */,
+				3C7988DB7E109AB2B06467841C2CC434 /* WBLaunchADConfiguration.m in Sources */,
+				29BEEB269B5A913CCC874D993E402A0D /* WBLaunchADConst.m in Sources */,
+				D15B2F8E20E505680D26F1D6661489A3 /* WBLaunchADDownloader.m in Sources */,
+				E6D82AFA7CEF70DB5222C630875C905E /* WBLaunchADImageManager.m in Sources */,
+				2E5D4A63B1DCEFDEED9497A0050B5C82 /* WBLaunchADImageView+WBLaunchADCache.m in Sources */,
+				568EB8EDE3DDCAB89BE566234E08F592 /* WBLaunchADView.m in Sources */,
+				1276C2F6A73321D89082FA07701A6141 /* WBLaunchADViewController.m in Sources */,
+				2B52E908753953A2AB3DD61FCC8A1805 /* WBLaunchImageView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC528AE0DAAC9FF225E1BF07E0C2A58C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5C7B2BAB57ADE6E32559250772CC11A7 /* Pods-WBLaunchAD_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FA8DF779DD8834A313C660ECC944D842 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15EFB243F222D2D37F1B5A31FCE7E5EE /* WBLaunchAD-dummy.m in Sources */,
-				AE4FECA6698FF16D34ECDE345F2F1571 /* WBLaunchAD.m in Sources */,
-				5D4B236D15CB65E8C0B288909F569C4F /* WBLaunchADButton.m in Sources */,
-				7E3DCCB107F89A6C1A1414E2919FAA02 /* WBLaunchADCache.m in Sources */,
-				2A88090E851D2060E9157D720876E5A8 /* WBLaunchADConst.m in Sources */,
-				9BA878D5F2CBD3859A6F0295F1201B25 /* WBLaunchADDownloader.m in Sources */,
-				FAB95335D2EEDDD4820006DE91F1AD2F /* WBLaunchADImageManager.m in Sources */,
-				3DDDD6D84F5A52BAE0BD5C1C068FB783 /* WBLaunchADImageView+WBLaunchADCache.m in Sources */,
-				B2755344B2505FC83E632A501B8F1515 /* WBLaunchADView.m in Sources */,
-				B335C0535C102EBBADC3F8837728B1B8 /* WBLaunchADConfiguration.m in Sources */,
-				22153F7214051B5814E1742EEB0D07FA /* WBLaunchADViewController.m in Sources */,
-				78BB7D79A59F51595667430F5B256CA3 /* WBLaunchImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +540,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -678,7 +679,7 @@
 		};
 		87E3B42E5107AA96134C7BFCBE28EC71 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BFF391ADA3C4386B08AB9B8A3C0F0A7 /* WBLaunchAD.xcconfig */;
+			baseConfigurationReference = 1E29F8D5320037E662A581CE42BC2290 /* WBLaunchAD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -777,7 +778,7 @@
 		};
 		B40B6F19C5961F1A207D07ADF3B354BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BFF391ADA3C4386B08AB9B8A3C0F0A7 /* WBLaunchAD.xcconfig */;
+			baseConfigurationReference = 1E29F8D5320037E662A581CE42BC2290 /* WBLaunchAD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

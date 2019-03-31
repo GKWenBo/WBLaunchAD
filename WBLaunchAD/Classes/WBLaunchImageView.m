@@ -10,17 +10,17 @@
 
 @implementation WBLaunchImageView
 
-- (instancetype)initWithSourceType:(WBLuanchImageSourceType)sourceType {
+- (instancetype)initWithSourceType:(WBLaunchImageSourceType)sourceType {
     if (self = [super init]) {
         self.frame = [UIScreen mainScreen].bounds;
         self.userInteractionEnabled = YES;
         self.backgroundColor = [UIColor whiteColor];
         
         switch (sourceType) {
-            case WBLuanchImageSourceTypeImage:
+            case WBLaunchImageSourceTypeImage:
                 self.image = [self imageFromLaunchImage];
                 break;
-            case WBLuanchImageSourceTypeLuanchScreen:
+            case WBLaunchImageSourceTypeLuanchScreen:
                 self.image = [self imageFromLaunchScreen];
                 break;
         }

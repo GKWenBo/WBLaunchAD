@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param sourceType 来源
  */
-+ (void)wb_setLuanchSourceType:(WBLaunchImageSourceType)sourceType;
++ (void)wb_setLaunchSourceType:(WBLaunchImageSourceType)sourceType;
 
 /**
  设置数据请求等待时间

@@ -13,14 +13,14 @@
 #import "WBLaunchAD.h"
 #import "WBLaunchADButton.h"
 #import "WBLaunchADCache.h"
+#import "WBLaunchADConfiguration.h"
 #import "WBLaunchADConst.h"
 #import "WBLaunchADDownloader.h"
 #import "WBLaunchADImageManager.h"
 #import "WBLaunchADImageView+WBLaunchADCache.h"
 #import "WBLaunchADView.h"
-#import "WBLuanchADConfiguration.h"
-#import "WBLuanchADViewController.h"
-#import "WBLuanchImageView.h"
+#import "WBLaunchADViewController.h"
+#import "WBLaunchImageView.h"
 
 FOUNDATION_EXPORT double WBLaunchADVersionNumber;
 FOUNDATION_EXPORT const unsigned char WBLaunchADVersionString[];

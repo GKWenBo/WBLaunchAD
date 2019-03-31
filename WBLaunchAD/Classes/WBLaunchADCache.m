@@ -53,7 +53,9 @@ static NSString *const kWBLuanchADPath = @"Library/WBLaunchADCache";
 }
 
 + (NSString *)wb_launchADCachePath {
-    return [NSHomeDirectory() stringByAppendingPathComponent:kWBLuanchADPath];
+    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:kWBLuanchADPath];
+    [self wb_createDirectoryIfNeeded:path];
+    return path;
 }
 
 + (NSString *)wb_imagePathWithURL:(NSURL *)url {
