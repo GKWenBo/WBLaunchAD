@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'WBLaunchAD'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'iOS启动图解决方案'
   s.homepage         = 'https://github.com/wenmobo/WBLaunchAD'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

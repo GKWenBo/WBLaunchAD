@@ -139,6 +139,7 @@
 
 - (void)wb_startSkipDispathTimer {
     WBLaunchADConfiguration *configuration = [self wb_commonConfiguration];
+    DISPATCH_SOURCE_CANCEL_SAFE(_waitDataTimer);
     if (!configuration.skipButtonType) configuration.skipButtonType = WBCountdownBtnTypeText;
     __block NSInteger duration = kSkipCountdownTime;
     if (configuration.duration) duration = configuration.duration;
