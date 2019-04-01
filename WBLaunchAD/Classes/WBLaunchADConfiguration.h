@@ -45,6 +45,8 @@ static NSInteger const kSkipCountdownTime = 5;
 @property(nonatomic, strong) UIView *customSkipView;
 /*  < 点击打开页面参数 > */
 @property (nonatomic, strong) id openModel;
+/*  < 程序从后台恢复时,是否需要展示广告(defailt NO) > */
+@property (nonatomic, assign) BOOL showEnterForeground;
 
 @end
 

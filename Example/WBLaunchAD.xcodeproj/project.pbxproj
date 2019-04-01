@@ -62,7 +62,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8AB8DA82903CC4255094C0B5 /* WBLaunchAD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WBLaunchAD.podspec; path = ../WBLaunchAD.podspec; sourceTree = "<group>"; };
+		8AB8DA82903CC4255094C0B5 /* WBLaunchAD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WBLaunchAD.podspec; path = ../WBLaunchAD.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7397FE952A98630FDFA46BF /* Pods-WBLaunchAD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBLaunchAD_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WBLaunchAD_Tests/Pods-WBLaunchAD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C53C33742251086A002DC40A /* WBLaunchADManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBLaunchADManager.h; sourceTree = "<group>"; };
 		C53C33752251086A002DC40A /* WBLaunchADManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBLaunchADManager.m; sourceTree = "<group>"; };
@@ -529,6 +529,7 @@
 			baseConfigurationReference = E5347DF4F69014A9CBFD40EA /* Pods-WBLaunchAD_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WBLaunchAD/WBLaunchAD-Prefix.pch";
 				INFOPLIST_FILE = "WBLaunchAD/WBLaunchAD-Info.plist";
@@ -544,6 +545,7 @@
 			baseConfigurationReference = F61721C81BE6D9E195C86F57 /* Pods-WBLaunchAD_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WBLaunchAD/WBLaunchAD-Prefix.pch";
 				INFOPLIST_FILE = "WBLaunchAD/WBLaunchAD-Info.plist";

@@ -9,6 +9,10 @@
 #import "WBLaunchADManager.h"
 #import <WBLaunchAD/WBLaunchAD.h>
 
+@interface WBLaunchADManager () <WBLaunchADDelegate>
+
+@end
+
 @implementation WBLaunchADManager
 
 + (void)load {
@@ -44,11 +48,24 @@
     configuration.duration = 5;
     configuration.imageNameOrURLString = @"http://yun.it7090.com/image/XHLaunchAd/pic_test01.jpg";
     configuration.imageOption = WBLaunchADImageOptionsDefault;
-    configuration.skipButtonType = WBCountdownBtnTypeTime;
+    configuration.skipButtonType = WBCountdownBtnTypeTimeText;
     configuration.showFinishAnimate = WBLaunchADFinishAnimationTypeLite;
     configuration.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     [WBLaunchAD wb_showLuanchWithConfiguration:configuration
                                       delegate:self];
+}
+
+// MARK:WBLaunchADDelegate
+- (void)wbLaunchAd:(WBLaunchAD *)launchAd clickAndOpenModel:(id)openModel clickPoint:(CGPoint)clickPoint {
+    NSLog(@"%s",__func__);
+}
+
+- (void)wbLaunchAD:(WBLaunchAD *)launchAd imageDownLoadFinish:(UIImage *)image imageData:(NSData *)imageData {
+    NSLog(@"%s",__func__);
+}
+
+- (void)wbLaunchAdShowFinish:(WBLaunchAD *)launchAd {
+    NSLog(@"%s",__func__);
 }
 
 @end

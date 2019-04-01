@@ -1,8 +1,7 @@
 {
   "name": "WBLaunchAD",
-  "version": "0.1.0",
-  "summary": "A short description of WBLaunchAD.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.0.1",
+  "summary": "iOS启动图解决方案",
   "homepage": "https://github.com/wenmobo/WBLaunchAD",
   "license": {
     "type": "MIT",
@@ -13,10 +12,15 @@
   },
   "source": {
     "git": "https://github.com/wenmobo/WBLaunchAD.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "WBLaunchAD/Classes/**/*"
+  "requires_arc": true,
+  "source_files": "WBLaunchAD/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }

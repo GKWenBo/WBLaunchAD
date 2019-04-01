@@ -23,6 +23,7 @@
     config.showFinishAnimate = WBLaunchADFinishAnimationTypeFadein;
     config.showFinishAnimateTime = kShowFinishAnimateTime;
     config.skipButtonType = WBCountdownBtnTypeText;
+    config.showEnterForeground = NO;
     return config;
 }
 

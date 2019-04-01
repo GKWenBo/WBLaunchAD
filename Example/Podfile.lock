@@ -1,5 +1,5 @@
 PODS:
-  - WBLaunchAD (0.1.0)
+  - WBLaunchAD (0.0.1)
 
 DEPENDENCIES:
   - WBLaunchAD (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WBLaunchAD: 111b779f3901f3a0c63457cb0cb3d9db7351cd77
+  WBLaunchAD: 776238a1db35468a594918e72ee450ab07e5cf2f
 
 PODFILE CHECKSUM: 45264d9a6877f35c7d988abc76166578cd983b76
 

@@ -44,6 +44,12 @@
     if (self) {
         [self wb_commonInit];
         [self wb_setupLuanchAD];
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationWillEnterForegroundNotification
+                                                          object:nil queue:nil
+                                                      usingBlock:^(NSNotification * _Nonnull note) {
+                                                          [self wb_setupLaunchAdEnterForeground];
+                                                      }];
     }
     return self;
 }
@@ -174,7 +180,10 @@
             break;
         case WBLaunchADFinishAnimationTypeLite:
         {
-            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionCurveEaseOut animations:^{
+            [UIView transitionWithView:_window
+                              duration:duration
+                               options:UIViewAnimationOptionCurveEaseOut
+                            animations:^{
                 _window.transform = CGAffineTransformMakeScale(1.5, 1.5);
                 _window.alpha = 0;
             } completion:^(BOOL finished) {
@@ -184,7 +193,10 @@
             break;
         case WBLaunchADFinishAnimationTypeFlipFromLeft:
         {
-            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{
+            [UIView transitionWithView:_window
+                              duration:duration
+                               options:UIViewAnimationOptionTransitionFlipFromLeft
+                            animations:^{
                 _window.alpha = 0;
             } completion:^(BOOL finished) {
                 [self wb_remove];
@@ -193,7 +205,10 @@
             break;
         case WBLaunchADFinishAnimationTypeFlipFromBottom:
         {
-            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+            [UIView transitionWithView:_window
+                              duration:duration
+                               options:UIViewAnimationOptionTransitionFlipFromBottom
+                            animations:^{
                 _window.alpha = 0;
             } completion:^(BOOL finished) {
                 [self wb_remove];
@@ -202,7 +217,10 @@
             break;
         case WBLaunchADFinishAnimationTypeCurlUp:
         {
-            [UIView transitionWithView:_window duration:duration options:UIViewAnimationOptionTransitionCurlUp animations:^{
+            [UIView transitionWithView:_window
+                              duration:duration
+                               options:UIViewAnimationOptionTransitionCurlUp
+                            animations:^{
                 _window.alpha = 0;
             } completion:^(BOOL finished) {
                 [self wb_remove];
@@ -258,20 +276,28 @@
     dispatch_resume(_waitDataTimer);
 }
 
+// MARK:通知
+- (void)wb_setupLaunchAdEnterForeground {
+    if (!_imageConfiguration.showEnterForeground) {
+        return;
+    }
+    [self wb_setupLuanchAD];
+    [self wb_setupImageAdForConfiguration:_imageConfiguration];
+}
+
 // MARK:remove
 - (void)wb_removeAndAnimateDefault {
     WBLaunchADConfiguration *configuration = [self wb_commonConfiguration];
     CGFloat duration = kShowFinishAnimateTime;
-    if (configuration.duration > 0) duration = configuration.duration;
-    [UIView animateWithDuration:duration
-                          delay:0.f
-                        options:UIViewAnimationOptionTransitionNone
-                     animations:^{
-                         _window.alpha = .0f;
-                     }
-                     completion:^(BOOL finished) {
-                         [self wb_remove];
-                     }];
+    if (configuration.showFinishAnimateTime > 0) duration = configuration.showFinishAnimateTime;
+    [UIView transitionWithView:_window
+                      duration:duration
+                       options:UIViewAnimationOptionTransitionNone
+                    animations:^{
+        _window.alpha = 0;
+    } completion:^(BOOL finished) {
+        [self wb_remove];
+    }];
 }
 
 - (void)wb_remove {
